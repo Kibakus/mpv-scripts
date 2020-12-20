@@ -36,7 +36,7 @@ sudo a2enmod dav_fs
 ```
 sudo vi /etc/apache2/sites-available/000-default.conf
 ```
-Find the **<VirtualHost>** section and add the following directives to it:
+Find the **<VirtualHost>** section and add the following directives to it [Screenshot config](https://raw.githubusercontent.com/Kibakus/mpv-scripts/main/Screenshot.png):
 
 ```
 Alias /webdav/var/www/webdav
