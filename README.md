@@ -19,24 +19,31 @@ script = /storage/emulated/0/Android/media/is.xyz.mpv/AudioWebDAV.lua
 script = /storage/emulated/0/Android/media/is.xyz.mpv/SubWebDAV.lua
 (The location can be chosen by yourself)
 ```
-Apache WebDAV setup (Debian / Ubuntu)
+## Apache WebDAV setup (Debian / Ubuntu)
 
+```
 sudo apt-get update
 sudo apt-get install apache2
-
+```
+```
 sudo mkdir /var/www/webdav
 sudo chown -R www-data: www-data/var/www/
-
+```
+```
 sudo a2enmod dav
 sudo a2enmod dav_fs
-
+```
+```
 sudo vi /etc/apache2/sites-available/000-default.conf
+```
+Find the **<VirtualHost>** section and add the following directives to it:
 
-Find the <VirtualHost> section and add the following directives to it:
+```
 Alias /webdav/var/www/webdav
 <Directory /var/www/webdav>
 DAV On
 </Directory>
+```
 
 The DavLockDB directive specifies the path to the WebDAV locking database.
 The Alias directive allows you to provide web access to any folder outside the document root. In this example, it links requests to http: // <hostname> / webdav to / var / www / webdav.
