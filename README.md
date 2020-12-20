@@ -46,7 +46,7 @@ DAV On
 ```
 
 The DavLockDB directive specifies the path to the WebDAV locking database.
-The Alias directive allows you to provide web access to any folder outside the document root. In this example, it links requests to http://<hostname>/webdav to /var/www/ webdav.
+The Alias directive allows you to provide web access to any folder outside the document root. In this example, it links requests to http://**hostname**/webdav to /var/www/webdav.
 The Directory directive specifies a number of other directives to be applied to the specified folder and all of its contents. In this example, the DAV directive specifies that WebDAV should be enabled for the /var/www/webdav directory.
 ```
 sudo systemctl enable apache2
