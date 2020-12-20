@@ -1,7 +1,7 @@
 # mpv-scripts
 A small collection of scripts for the MPV player to make your life a bit better.
 
-# Audio WebDAV AND Sub WebDAV
+# Audio WebDAV & Sub WebDAV
 Auto connection of external subtitles and sound, using the "WEBDAV" protocol. The connection is explicit due to explicitly specifying folders on the WebDAV server
 
 Due to the limitation of the search for files on http in MPV, these scripts were created to facilitate video playback on an Android/iPhone device, but the scripts also work on Linux/Windows.
