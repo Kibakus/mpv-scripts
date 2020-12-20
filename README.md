@@ -57,7 +57,7 @@ sudo systemctl restart apache2
 ```
 sudo vi /etc/apache2/apache2.conf
 ```
-+ add
+**add**
 ```
 <Directory /home/your_user/folder_public_html>
  Options Indexes FollowSymLinks
